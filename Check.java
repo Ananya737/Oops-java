@@ -4,7 +4,8 @@ class Override{
 }
 
 public class Check{
-    //Final variables cannot override values;
+    //Final keyword is called a modifier;
+    //Final variables cannot override values;  
     final int x=10;
     public static void main(String args[]){
 Check obj=new Check();
