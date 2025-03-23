@@ -18,25 +18,34 @@
         this.age=age;
     }
     void display(){
-        System.out.println(a);
+        for(int i:arr){
+System.out.println(i);
+        }
+        
     }
 
     //Copy Constructor;
 
     One(One obj){
-        this.a=obj.a;
+             this.arr=new int[obj.arr.length];
+        for(int i=0;i<obj.arr.length;i++){
+            this.arr[i]=obj.arr[i];
+        }
     }
  }
 
 public class Constructor{
  public static void main(String args[]){
-    One obj=new One(9);
+    int arr[]={3,6,0};
+
+    One obj=new One(arr);
     One obj1=new One(obj);
 
     // obj.display();
     // obj1.display();
 
-    obj.a=12;
+obj.arr[0]=4;
+
 
     obj.display();
     obj1.display();
