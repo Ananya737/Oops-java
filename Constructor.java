@@ -1,9 +1,20 @@
  class One{
-    //Parameterised constructor;
+    
+    // String name;
+    // int age;
+
+    //Constructor overloading;
+
+    // One(String name,int age){
+    //     this.name=name;
+    //     this.age=age;
+    // }
+
+
+
+//Parameterised constructor;
 
     int arr[];
-    String name;
-    int age;
     One(int arr[]){
         this.arr=new int[arr.length];
         for(int i=0;i<arr.length;i++){
@@ -11,17 +22,13 @@
         }
     }
 
-    //Constructor overloading;
-
-    One(String name,int age){
-        this.name=name;
-        this.age=age;
-    }
+  
     void display(){
+
+        //For each loop;
         for(int i:arr){
-System.out.println(i);
-        }
-        
+        System.out.println(i);
+        }    
     }
 
     //Copy Constructor;
