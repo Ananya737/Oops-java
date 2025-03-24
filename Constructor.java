@@ -1,14 +1,14 @@
  class One{
     
-    // String name;
-    // int age;
+    String name;
+    int age;
 
     //Constructor overloading;
 
-    // One(String name,int age){
-    //     this.name=name;
-    //     this.age=age;
-    // }
+    One(String name,int age){
+        this.name=name;
+        this.age=age;
+    }
 
 
 
