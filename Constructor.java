@@ -27,11 +27,13 @@
 
         //For each loop;
         for(int i:arr){
-        System.out.println(i);
-        }    
+        System.out.print(i);
+        }  System.out.println();  
     }
 
-    //Copy Constructor;
+    //Copy Constructor; 
+
+    //Deep Copy constructure;
 
     One(One obj){
              this.arr=new int[obj.arr.length];
@@ -48,8 +50,8 @@ public class Constructor{
     One obj=new One(arr);
     One obj1=new One(obj);
 
-    // obj.display();
-    // obj1.display();
+    obj.display();
+    obj1.display();
 
 obj.arr[0]=4;
 
