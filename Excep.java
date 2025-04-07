@@ -25,26 +25,66 @@
  // Ab hum apna exception show karayenge with the help of super and throw keywords.
 
 
-class Ae extends RuntimeException{
-    Ae(){
-        super("denominator must not be zero");
-    }
+
+ //Runtime/Unchecked exception: 
+
+// class Ae extends RuntimeException{
+//     Ae(){
+//         super("denominator must not be zero");
+//     }
+// }
+
+// public class Excep{
+//     public static void main(String args[]){
+//         int a=12;
+//         int b=0;
+//         int c;
+        
+//         if(b==0){
+//             throw new Ae();
+//         }
+//         else{
+//             c=a/b;
+//             System.out.println(c);
+//         }
+    
+
+//     }
+//  }
+
+
+
+
+
+
+
+
+ class Ae extends Exception{
+   
 }
 
-public class Excep{
-    public static void main(String args[]){
+public class Excep {
+    public static void main(String args[]) throws Ae{
         int a=12;
-        int b=6;
+        int b=0;
         int c;
         
-        if(b==0){
-            throw new Ae();
-        }
-        else{
+        // if(b==0){
+        //     throw new Ae();
+        // }
+        // else{
+        //     c=a/b;
+        //     System.out.println(c);
+        // }
+    
+
+        try{
             c=a/b;
             System.out.println(c);
         }
-    
+        catch(Exception e){
+        e.printStackTrace();;
+        }
 
     }
  }
