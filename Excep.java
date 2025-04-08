@@ -26,11 +26,11 @@
 
 
 
- //Runtime/Unchecked exception: 
+ //---------------------------------------------------------------Runtime/Unchecked exception----------------------------------------------------------------------------
 
 // class Ae extends RuntimeException{
 //     Ae(){
-//         super("denominator must not be zero");
+//         super("denominator must not be zero!");
 //     }
 // }
 
@@ -40,12 +40,21 @@
 //         int b=0;
 //         int c;
         
-//         if(b==0){
-//             throw new Ae();
-//         }
-//         else{
+        // if(b==0){
+        //     throw new Ae();
+        // }
+        // else{
+        //     c=a/b;
+        //     System.out.println(c);
+        // }
+
+//         try{
 //             c=a/b;
 //             System.out.println(c);
+//         }
+//         catch(Exception e) {
+//             e.printStackTrace();
+
 //         }
     
 
@@ -55,19 +64,25 @@
 
 
 
+//---------------------------------------------------------------Checked/Compile time exception--------------------------------------------------------------------------
 
 
 
+//  class Ae extends Exception{
+//     Ae(){
+//         super("Denominator cannot be zero");
 
- class Ae extends Exception{
-   
-}
+//     }
+// }
 
-public class Excep {
-    public static void main(String args[]) throws Ae{
-        int a=12;
-        int b=0;
-        int c;
+// public class Excep {
+//     public static void main(String args[])throws Ae{
+//         int a=12;
+//         int b=0;
+//         int c;
+
+
+        //--------------------------------------Custom exception-----------------------------------------
         
         // if(b==0){
         //     throw new Ae();
@@ -78,16 +93,19 @@ public class Excep {
         // }
     
 
-        try{
-            c=a/b;
-            System.out.println(c);
-        }
-        catch(Exception e){
-        e.printStackTrace();;
-        }
 
-    }
- }
+        //--------------------------------------Default exception---------------------------------------
+
+//         try{
+//             c=a/b;
+//             System.out.println(c);
+//         }
+//         catch(Exception e){
+//         e.printStackTrace();
+//         }
+
+//     }
+//  }
 
 
 
