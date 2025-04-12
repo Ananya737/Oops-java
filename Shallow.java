@@ -14,7 +14,7 @@ void display(){
 }
 }
 
-public class ShallowCopy{
+public class Shallow{
 public static void main(String args[]){
     int arr[]={0,20,30};
 One obj1=new One(arr);
@@ -29,3 +29,19 @@ obj1.display();
 obj2.display();
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
